@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <script src="sketch.js"></script>
+    <script src="model.js"></script>
+</head>
+<style>
+    .slider {
+        -webkit-appearance: none;
+        width: 600px;
+        height: 25px;
+        background: #065f28;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+    }
+    
+    .slider:hover {
+        opacity: 1;
+    }
+    
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+    
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        background: #4CAF50;
+        cursor: pointer;
+    }
+
+    #Main_Container {
+      width: 100%;
+      text-align:center;
+  
+   }
+</style>
+
+<body bgcolor="#101f38">
+    <div id="Main_Container">
+        <canvas id="myCanvas" width="600" height="600" "></canvas>
+        </br>
+        <input type="range" min="0" max="180" value="0" class="slider" id="angle">
+        </br>
+        <input type="range" min="0" max="12" value="0" class="slider" id="level">
+        </br>
+        <input type="range" min="0" max="180" value="0" class="slider" id="startingDirection">
+        </br>
+    </div>
+
+</body>
+
+</html>
